@@ -1,0 +1,41 @@
+#Caso de Empate 04 - Dama x Dama
+
+criarTabuleiro idTabuleiro="TB-01" dimensao=8
+
+iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+ativarPosicionamentoManual idPartida="PT-01"
+
+posicionarPeca idPartida="PT-01" cor=1 linha=8 coluna="a"
+
+posicionarPeca idPartida="PT-01" cor=2 linha=1 coluna="d"
+
+setVez idPartida="PT-01" jogador=1
+
+movimentoJogador numeroJogador=1 linhaOrigem=8 colunaOrigem="a" linhaDestino=7 colunaDestino="b"
+
+movimentoJogador numeroJogador=2 linhaOrigem=1 colunaOrigem="d" linhaDestino=2 colunaDestino="e"
+
+movimentoJogador numeroJogador=1 linhaOrigem=7 colunaOrigem="b" linhaDestino=6 colunaDestino="a"
+
+movimentoJogador numeroJogador=2 linhaOrigem=2 colunaOrigem="e" linhaDestino=3 colunaDestino="f"
+
+movimentoJogador numeroJogador=1 linhaOrigem=6 colunaOrigem="a" linhaDestino=5 colunaDestino="b"
+
+movimentoJogador numeroJogador=2 linhaOrigem=3 colunaOrigem="f" linhaDestino=4 colunaDestino="g"
+
+movimentoJogador numeroJogador=1 linhaOrigem=5 colunaOrigem="b" linhaDestino=4 colunaDestino="a"
+
+movimentoJogador numeroJogador=2 linhaOrigem=4 colunaOrigem="g" linhaDestino=3 colunaDestino="f"
+
+movimentoJogador numeroJogador=1 linhaOrigem=4 colunaOrigem="a" linhaDestino=3 colunaDestino="b"
+
+movimentoJogador numeroJogador=2 linhaOrigem=3 colunaOrigem="f" linhaDestino=5 colunaDestino="g"
+
+#Finaliza o jogo
+
+expect "Empate" getVencedorPartida id="p01"
+
+zerarJogo
+
+quit

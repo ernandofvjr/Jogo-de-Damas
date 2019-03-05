@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.0" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="regras.ChecarSeJogadorVenceu" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/ChecarSeJogadorVenceu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="201" x="-1088" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="regras.CasaDesocupada" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/CasaDesocupada.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="163" x="1481" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="regras.VerificarSePodeComer" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/VerificarSePodeComer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="186" x="621" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="Excecoes.DamasException" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/Excecoes/DamasException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="142" x="444" y="-63"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="regras.VerificarSePodeMover" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/VerificarSePodeMover.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="185" x="-847" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="regras.AndarNaDiagonal" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/AndarNaDiagonal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="162" x="1073" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="regras.ChecarUm" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/ChecarUm.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="134" x="1388" y="2198"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="componentes.Peca" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/Peca.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="137" x="2620" y="2715"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="regras.ContagemDePecas" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/ContagemDePecas.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="168" x="-622" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="componentes.Tabuleiro" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/Tabuleiro.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="477" width="204" x="2620" y="2198"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="regras.SeEstaMovendoUmaPeca" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/SeEstaMovendoUmaPeca.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="200" x="59" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="regras.VerificarSeVirouDama" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/VerificarSeVirouDama.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="184" x="-165" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="13" language="java" name="regras.ChecarDois" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/ChecarDois.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="165" x="-55" y="2198"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="14" language="java" name="componentes.Adapter" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/Adapter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="369" width="325" x="2159" y="-63"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="15" language="java" name="regras.ChecarTres" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/ChecarTres.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="162" x="847" y="2198"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="16" language="java" name="regras.VerificarSopro" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/VerificarSopro.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="282" x="299" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="17" language="java" name="componentes.IFacadeJogoDamas" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/IFacadeJogoDamas.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="325" x="1813" y="346"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="18" language="java" name="componentes.Partida" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/Partida.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="873" width="371" x="2159" y="737"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="componentes.PersistenciaPartidas" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/PersistenciaPartidas.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="191" x="2524" y="-63"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="regras.VerificarLimite" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/VerificarLimite.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="145" x="1296" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="componentes.ControleDeMovimento" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/ControleDeMovimento.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="442" x="1299" y="1650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="componentes.Jogo" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/Jogo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="338" x="2410" y="346"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="regras.Regra" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/Regra.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="158" x="847" y="1650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="regras.ChecarTrajetoDaDama" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/ChecarTrajetoDaDama.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="185" x="1958" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="regras.CorDaPecaDirecaoDoMovimento" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/CorDaPecaDirecaoDoMovimento.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="209" x="-414" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="movimentos.ComerComDama" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/movimentos/ComerComDama.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="236" x="2183" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="regras.VerificarSePodeComerComDama" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/VerificarSePodeComerComDama.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="234" x="1684" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="entradaESAida.Impressora" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/entradaESAida/Impressora.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="134" x="2765" y="-63"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="movimentos.ComerPeca" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/movimentos/ComerPeca.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="140" x="2459" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="componentes.Jogador" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/componentes/Jogador.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="172" x="635" y="1650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="entradaESAida.Saida" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/entradaESAida/Saida.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="197" x="2702" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="regras.PecaComumAndarUmaCasa" project="Dama_PP-ernando_elton" 
+    file="/Dama_PP-ernando_elton/src/regras/PecaComumAndarUmaCasa.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="186" x="847" y="2023"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="33">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="34" name="jogo"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <realization id="39">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <generalization id="40">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <association id="41">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="42" name="corDaPecaDirecaoDoMovimento"/>      
+      <multiplicity id="43" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="44">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="45" name="pecaComumAndarUmaCasa"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="48" name="tabuleiro"/>      
+      <multiplicity id="49" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="50">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="51" name="controleDeMovimento"/>      
+      <multiplicity id="52" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="53">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="54" name="tabuleiro"/>      
+      <multiplicity id="55" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="56">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="57" name="andarNaDiagonal"/>      
+      <multiplicity id="58" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="59">    
+    <bendpoint x="2629" y="2023"/>    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="60" name="tabuleiro"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="62">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="63" name="checarTrajetoDaDama"/>      
+      <multiplicity id="64" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="65">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <association id="66">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="67" name="comerPeca"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="69">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <association id="70">    
+    <bendpoint x="1265" y="2023"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="71" name="tabuleiro"/>      
+      <multiplicity id="72" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="73">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <realization id="74">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <association id="75">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="76" name="partidas"/>      
+      <multiplicity id="77" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="78">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="79" name="verificarSePodeComer"/>      
+      <multiplicity id="80" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="81">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="82" name="tabuleiro"/>      
+      <multiplicity id="83" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="84">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <association id="85">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="86" name="casaDesocupada"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="88">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <generalization id="89">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <association id="90">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="91" name="uniqueInstance"/>      
+      <multiplicity id="92" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <bendpoint x="2671" y="737"/>    
+    <bendpoint x="2671" y="1650"/>    
+    <bendpoint x="2671" y="2023"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="94" name="tabuleiros"/>      
+      <multiplicity id="95" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="96">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <association id="97">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="98" name="comerComDama"/>      
+      <multiplicity id="99" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="100">    
+    <bendpoint x="2650" y="1650"/>    
+    <bendpoint x="2650" y="2023"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="101" name="tabuleiro"/>      
+      <multiplicity id="102" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="103">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <association id="104">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="105" name="jogador1"/>      
+      <multiplicity id="106" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="107">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <generalization id="108">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <association id="109">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="110" name="seEstaMovendoUmaPeca"/>      
+      <multiplicity id="111" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="112">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <realization id="113">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <association id="114">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="115" name="verificarSopro"/>      
+      <multiplicity id="116" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="117">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <generalization id="118">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <association id="119">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="120" name="verificarSeVirouDama"/>      
+      <multiplicity id="121" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="122">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <realization id="123">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <realization id="124">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <association id="125">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="126" name="tabuleiro"/>      
+      <multiplicity id="127" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="128">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="129" name="jogador2"/>      
+      <multiplicity id="130" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="131">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="23"/>  
+  </generalization>  
+  <association id="132">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="133" name="verificarLimite"/>      
+      <multiplicity id="134" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="135">    
+    <bendpoint x="2168" y="346"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="136" name="partida"/>      
+      <multiplicity id="137" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="138">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="139" name="verificarSePodeComerComDama"/>      
+      <multiplicity id="140" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

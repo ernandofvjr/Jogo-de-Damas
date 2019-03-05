@@ -1,0 +1,89 @@
+#User Story 06 - Transformacao em Dama
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-01" dimensao=8
+
+iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+#Uma vez chamado, este metodo limpa todas as pecas do tabuleiro
+ativarPosicionamentoManual idPartida="PT-01"
+
+#metodo de posicionamento de pecas no tabuleiro (para testes)
+#cores: 1- Branca, 2 - Preta
+
+#damas brancas
+posicionarPeca idPartida="PT-01" cor=1 linha=8 coluna="a"
+
+posicionarPeca idPartida="PT-01" cor=1 linha=8 coluna="c"
+
+posicionarPeca idPartida="PT-01" cor=1 linha=8 coluna="e"
+
+posicionarPeca idPartida="PT-01" cor=1 linha=8 coluna="g"
+
+#pedras comuns - brancas
+posicionarPeca idPartida="PT-01" cor=1 linha=2 coluna="a"
+
+posicionarPeca idPartida="PT-01" cor=1 linha=2 coluna="c"
+
+posicionarPeca idPartida="PT-01" cor=1 linha=2 coluna="e"
+
+posicionarPeca idPartida="PT-01" cor=1 linha=2 coluna="g"
+
+#Damas pretas
+posicionarPeca idPartida="PT-01" cor=2 linha=1 coluna="b"
+
+posicionarPeca idPartida="PT-01" cor=2 linha=1 coluna="d"
+
+posicionarPeca idPartida="PT-01" cor=2 linha=1 coluna="f"
+
+posicionarPeca idPartida="PT-01" cor=2 linha=1 coluna="h"
+
+#Pedras comuns - Pretas
+posicionarPeca idPartida="PT-01" cor=2 linha=7 coluna="b"
+
+posicionarPeca idPartida="PT-01" cor=2 linha=7 coluna="d"
+
+posicionarPeca idPartida="PT-01" cor=2 linha=7 coluna="f"
+
+posicionarPeca idPartida="PT-01" cor=2 linha=7 coluna="h"
+
+#Damas
+expect "true" isDama idPartida="PT-01" linha=8 coluna="a"
+
+expect "true" isDama idPartida="PT-01" linha=8 coluna="c"
+
+expect "true" isDama idPartida="PT-01" linha=8 coluna="e"
+
+expect "true" isDama idPartida="PT-01" linha=8 coluna="g"
+
+expect "true" isDama idPartida="PT-01" linha=1 coluna="b"
+
+expect "true" isDama idPartida="PT-01" linha=1 coluna="d"
+
+expect "true" isDama idPartida="PT-01" linha=1 coluna="f"
+
+expect "true" isDama idPartida="PT-01" linha=1 coluna="h"
+
+#Nao-damas
+
+expect "false" isDama idPartida="PT-01" linha=2 coluna="a"
+
+expect "false" isDama idPartida="PT-01" linha=2 coluna="c"
+
+expect "false" isDama idPartida="PT-01" linha=2 coluna="e"
+
+expect "false" isDama idPartida="PT-01" linha=2 coluna="g"
+
+expect "false" isDama idPartida="PT-01" linha=7 coluna="b"
+
+expect "false" isDama idPartida="PT-01" linha=7 coluna="d"
+
+expect "false" isDama idPartida="PT-01" linha=7 coluna="f"
+
+expect "false" isDama idPartida="PT-01" linha=7 coluna="h"
+
+encerrarPartidaSemSalvar idPartida="PT-01"
+
+zerarJogo
+
+quit

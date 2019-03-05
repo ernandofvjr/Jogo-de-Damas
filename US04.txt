@@ -1,0 +1,123 @@
+#User Story - 04: Regras de Captura e Sopro
+
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-01" dimensao=8
+
+#Nao permite sopro
+iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="c" linhaDestino=4 colunaDestino="d"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="f" linhaDestino=5 colunaDestino="g"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="e" linhaDestino=4 colunaDestino="f"
+
+#jogador 2 comete sopro
+expectError "A regra de sopro definida nao permite soprar" movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="b" linhaDestino=5 colunaDestino="c"
+#Continua sendo a vez do jogador 2
+
+movimentoJogador numeroJogador=2 linhaOrigem=5 colunaOrigem="g" linhaDestino=3 colunaDestino="e"
+#Depois da linha acima, o jogador 2 capturou uma peca do jogador 1. Ela nao deve mais estar disponivel
+
+expect "false" isOcupada idPartida="PT-01" linha=4 coluna="f"
+
+#jogador 1 comete sopro
+expectError "A regra de sopro definida nao permite soprar" movimentoJogador numeroJogador=1 linhaOrigem=2 colunaOrigem="b" linhaDestino=3 colunaDestino="c"
+#Continua sendo a vez do jogador 1
+
+movimentoJogador numeroJogador=1 linhaOrigem=2 colunaOrigem="d" linhaDestino=4 colunaDestino="f"
+#Depois da linha acima, o jogador 1 capturou uma peca do jogador 2. Ela nao deve estar mais disponivel
+
+expect "false" isOcupada idPartida="PT-01" linha=3 coluna="e"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="b" linhaDestino=5 colunaDestino="a"
+
+movimentoJogador numeroJogador=1 linhaOrigem=4 colunaOrigem="d" linhaDestino=5 colunaDestino="c"
+
+#mais uma captura
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="d" linhaDestino=4 colunaDestino="b"
+
+expect "false" isOcupada idPartida="PT-01" linha=5 coluna="c"
+
+#mais uma captura
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="a" linhaDestino=5 colunaDestino="c"
+
+expect "false" isOcupada idPartida="PT-01" linha=4 coluna="b"
+
+encerrarPartidaSemSalvar id="PT-01"
+
+iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="c" linhaDestino=4 colunaDestino="d"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="b" linhaDestino=5 colunaDestino="a"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="e" linhaDestino=4 colunaDestino="f"
+
+movimentoJogador numeroJogador=2 linhaOrigem=7 colunaOrigem="c" linhaDestino=6 colunaDestino="b"
+
+movimentoJogador numeroJogador=1 linhaOrigem=2 colunaOrigem="d" linhaDestino=3 colunaDestino="c"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="f" linhaDestino=5 colunaDestino="g"
+
+movimentoJogador numeroJogador=1 linhaOrigem=1 colunaOrigem="c" linhaDestino=2 colunaDestino="d"
+
+#Nesse momento, o jogador 2 (pedras pretas) pode comer duas pecas do jogador 1 (2d e 4f).
+#Podem tambem haver situacoes onde tres, quatro, e mais pedras podem ser comidas em uma unica jogada.
+#Nesse caso, entende-se que ele "pula" as casas de uma vez so, indo direto para a casa final
+movimentoJogador numeroJogador=2 linhaOrigem=5 colunaOrigem="g" linhaDestino=1 colunaDestino="c"
+
+expect "false" isOcupada idPartida="PT-01" linha=2 coluna="d"
+
+expect "false" isOcupada idPartida="PT-01" linha=4 coluna="f"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="a" linhaDestino=4 colunaDestino="b"
+
+movimentoJogador numeroJogador=2 linhaOrigem=8 colunaOrigem="d" linhaDestino=7 colunaDestino="c"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="g" linhaDestino=4 colunaDestino="h"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="h" linhaDestino=5 colunaDestino="g"
+
+#Agora, a situacao se inverte: o jogador 1 (pecas brancas) pode comer duas pecas do jogador 2 (5g e 7e).
+movimentoJogador numeroJogador=1 linhaOrigem=4 colunaOrigem="h" linhaDestino=8 colunaDestino="d"
+
+expect "false" isOcupada idPartida="PT-01" linha=5 coluna="g"
+
+expect "false" isOcupada idPartida="PT-01" linha=7 coluna="e"
+
+encerrarPartidaSemSalvar id="PT-01"
+
+#Permite sopro. Jogador que soprar perde a partida
+iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="true"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="c" linhaDestino=4 colunaDestino="d"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="f" linhaDestino=5 colunaDestino="e"
+
+#jogador 1 comete sopro
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="a" linhaDestino=4 colunaDestino="b"
+
+#partida foi encerrada e jogador2 ganhou
+expect "Maria" getVencedorPartida id="PT-01"
+
+descartarPartida id="PT-01"
+
+iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="true"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="c" linhaDestino=4 colunaDestino="b"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="d" linhaDestino=5 colunaDestino="e"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="g" linhaDestino=4 colunaDestino="f"
+
+#jogador 2 comete sopro
+movimentoJogador numeroJogador=2 linhaOrigem=7 colunaOrigem="e" linhaDestino=6 colunaDestino="d"
+#partida foi encerrada e jogador 1 ganhou
+
+expect "Pedro" getVencedorPartida id="PT-01"
+
+zerarJogo
+
+quit

@@ -1,0 +1,288 @@
+#User Story 01 - Iniciar Partida, Verificar Preenchimento e Consultar Cores
+
+#Criacao de tabuleiros com tamanhos validos
+
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-01" dimensao=10
+
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-02" dimensao=6
+
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-03" dimensao=22
+
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-04" dimensao=16
+
+zerarJogo
+
+#Criacao de tabuleiros com tamanhos invalidos
+
+zerarJogo
+
+expectError "Tamanho de tabuleiro invalido" criarTabuleiro idTabuleiro="TB-05" dimensao=4
+
+expectError "Tamanho de tabuleiro invalido" criarTabuleiro idTabuleiro="TB-06" dimensao=15
+
+expectError "Tamanho de tabuleiro invalido" criarTabuleiro idTabuleiro="TB-07" dimensao=7
+
+expectError "Tamanho de tabuleiro invalido" criarTabuleiro idTabuleiro="TB-08" dimensao=-5
+
+#Verificacao de posicionamento das pecas
+
+criarTabuleiro idTabuleiro="TB-01" dimensao=8
+
+iniciarPartida id="PT-02" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+expect true isOcupada idPartida="PT-02" linha=1 coluna="a"
+expect false isOcupada idPartida="PT-02" linha=1 coluna="b"
+expect true isOcupada idPartida="PT-02" linha=1 coluna="c"
+expect false isOcupada idPartida="PT-02" linha=1 coluna="d"
+expect true isOcupada idPartida="PT-02" linha=1 coluna="e"
+expect false isOcupada idPartida="PT-02" linha=1 coluna="f"
+expect true isOcupada idPartida="PT-02" linha=1 coluna="g"
+expect false isOcupada idPartida="PT-02" linha=1 coluna="h"
+
+expect false isOcupada idPartida="PT-02" linha=2 coluna="a"
+expect true isOcupada idPartida="PT-02" linha=2 coluna="b"
+expect false isOcupada idPartida="PT-02" linha=2 coluna="c"
+expect true isOcupada idPartida="PT-02" linha=2 coluna="d"
+expect false isOcupada idPartida="PT-02" linha=2 coluna="e"
+expect true isOcupada idPartida="PT-02" linha=2 coluna="f"
+expect false isOcupada idPartida="PT-02" linha=2 coluna="g"
+expect true isOcupada idPartida="PT-02" linha=2 coluna="h"
+
+expect true isOcupada idPartida="PT-02" linha=3 coluna="a"
+expect false isOcupada idPartida="PT-02" linha=3 coluna="b"
+expect true isOcupada idPartida="PT-02" linha=3 coluna="c"
+expect false isOcupada idPartida="PT-02" linha=3 coluna="d"
+expect true isOcupada idPartida="PT-02" linha=3 coluna="e"
+expect false isOcupada idPartida="PT-02" linha=3 coluna="f"
+expect true isOcupada idPartida="PT-02" linha=3 coluna="g"
+expect false isOcupada idPartida="PT-02" linha=3 coluna="h"
+
+expect false isOcupada idPartida="PT-02" linha=4 coluna="a"
+expect false isOcupada idPartida="PT-02" linha=4 coluna="b"
+expect false isOcupada idPartida="PT-02" linha=4 coluna="c"
+expect false isOcupada idPartida="PT-02" linha=4 coluna="d"
+expect false isOcupada idPartida="PT-02" linha=4 coluna="e"
+expect false isOcupada idPartida="PT-02" linha=4 coluna="f"
+expect false isOcupada idPartida="PT-02" linha=4 coluna="g"
+expect false isOcupada idPartida="PT-02" linha=4 coluna="h"
+
+expect false isOcupada idPartida="PT-02" linha=5 coluna="a"
+expect false isOcupada idPartida="PT-02" linha=5 coluna="b"
+expect false isOcupada idPartida="PT-02" linha=5 coluna="c"
+expect false isOcupada idPartida="PT-02" linha=5 coluna="d"
+expect false isOcupada idPartida="PT-02" linha=5 coluna="e"
+expect false isOcupada idPartida="PT-02" linha=5 coluna="f"
+expect false isOcupada idPartida="PT-02" linha=5 coluna="g"
+expect false isOcupada idPartida="PT-02" linha=5 coluna="h"
+
+expect false isOcupada idPartida="PT-02" linha=6 coluna="a"
+expect true isOcupada idPartida="PT-02" linha=6 coluna="b"
+expect false isOcupada idPartida="PT-02" linha=6 coluna="c"
+expect true isOcupada idPartida="PT-02" linha=6 coluna="d"
+expect false isOcupada idPartida="PT-02" linha=6 coluna="e"
+expect true isOcupada idPartida="PT-02" linha=6 coluna="f"
+expect false isOcupada idPartida="PT-02" linha=6 coluna="g"
+expect true isOcupada idPartida="PT-02" linha=6 coluna="h"
+
+expect true isOcupada idPartida="PT-02" linha=7 coluna="a"
+expect false isOcupada idPartida="PT-02" linha=7 coluna="b"
+expect true isOcupada idPartida="PT-02" linha=7 coluna="c"
+expect false isOcupada idPartida="PT-02" linha=7 coluna="d"
+expect true isOcupada idPartida="PT-02" linha=7 coluna="e"
+expect false isOcupada idPartida="PT-02" linha=7 coluna="f"
+expect true isOcupada idPartida="PT-02" linha=7 coluna="g"
+expect false isOcupada idPartida="PT-02" linha=7 coluna="h"
+
+expect false isOcupada idPartida="PT-02" linha=8 coluna="a"
+expect true isOcupada idPartida="PT-02" linha=8 coluna="b"
+expect false isOcupada idPartida="PT-02" linha=8 coluna="c"
+expect true isOcupada idPartida="PT-02" linha=8 coluna="d"
+expect false isOcupada idPartida="PT-02" linha=8 coluna="e"
+expect true isOcupada idPartida="PT-02" linha=8 coluna="f"
+expect false isOcupada idPartida="PT-02" linha=8 coluna="g"
+expect true isOcupada idPartida="PT-02" linha=8 coluna="h"
+
+#Verificando cores das pecas
+
+#Entradas invalidas
+
+expectError "O ID da partida informado e invalido" getCorCasa idPartida="" linha=1 coluna="a"
+expectError "O ID da partida informado e invalido" getCorCasa idPartida= linha=2 coluna="b"
+expectError "O ID da partida informado nao existe" getCorCasa idPartida="PT-85" linha=3 coluna="c"
+expectError "A linha informada nao e valida" getCorCasa idPartida="PT-85" linha=-9 coluna="d"
+expectError "A coluna informada nao e valida" getCorCasa idPartida="PT-85" linha=4 coluna=""
+expectError "A coluna informada nao e valida" getCorCasa idPartida="PT-85" linha=5 coluna=""
+
+#Entradas validas
+
+expect "escura" getCorCasa idPartida="PT-02" linha=1 coluna="a"
+expect "branca" getCorCasa idPartida="PT-02" linha=1 coluna="b"
+expect "escura" getCorCasa idPartida="PT-02" linha=1 coluna="c"
+expect "branca" getCorCasa idPartida="PT-02" linha=1 coluna="d"
+expect "escura" getCorCasa idPartida="PT-02" linha=1 coluna="e"
+expect "branca" getCorCasa idPartida="PT-02" linha=1 coluna="f"
+expect "escura" getCorCasa idPartida="PT-02" linha=1 coluna="g"
+expect "branca" getCorCasa idPartida="PT-02" linha=1 coluna="h"
+
+expect "branca" getCorCasa idPartida="PT-02" linha=2 coluna="a"
+expect "escura" getCorCasa idPartida="PT-02" linha=2 coluna="b"
+expect "branca" getCorCasa idPartida="PT-02" linha=2 coluna="c"
+expect "escura" getCorCasa idPartida="PT-02" linha=2 coluna="d"
+expect "branca" getCorCasa idPartida="PT-02" linha=2 coluna="e"
+expect "escura" getCorCasa idPartida="PT-02" linha=2 coluna="f"
+expect "branca" getCorCasa idPartida="PT-02" linha=2 coluna="g"
+expect "escura" getCorCasa idPartida="PT-02" linha=2 coluna="h"
+
+expect "escura" getCorCasa idPartida="PT-02" linha=3 coluna="a"
+expect "branca" getCorCasa idPartida="PT-02" linha=3 coluna="b"
+expect "escura" getCorCasa idPartida="PT-02" linha=3 coluna="c"
+expect "branca" getCorCasa idPartida="PT-02" linha=3 coluna="d"
+expect "escura" getCorCasa idPartida="PT-02" linha=3 coluna="e"
+expect "branca" getCorCasa idPartida="PT-02" linha=3 coluna="f"
+expect "escura" getCorCasa idPartida="PT-02" linha=3 coluna="g"
+expect "branca" getCorCasa idPartida="PT-02" linha=3 coluna="h"
+
+expect "branca" getCorCasa idPartida="PT-02" linha=4 coluna="a"
+expect "escura" getCorCasa idPartida="PT-02" linha=4 coluna="b"
+expect "branca" getCorCasa idPartida="PT-02" linha=4 coluna="c"
+expect "escura" getCorCasa idPartida="PT-02" linha=4 coluna="d"
+expect "branca" getCorCasa idPartida="PT-02" linha=4 coluna="e"
+expect "escura" getCorCasa idPartida="PT-02" linha=4 coluna="f"
+expect "branca" getCorCasa idPartida="PT-02" linha=4 coluna="g"
+expect "escura" getCorCasa idPartida="PT-02" linha=4 coluna="h"
+
+expect "escura" getCorCasa idPartida="PT-02" linha=5 coluna="a"
+expect "branca" getCorCasa idPartida="PT-02" linha=5 coluna="b"
+expect "escura" getCorCasa idPartida="PT-02" linha=5 coluna="c"
+expect "branca" getCorCasa idPartida="PT-02" linha=5 coluna="d"
+expect "escura" getCorCasa idPartida="PT-02" linha=5 coluna="e"
+expect "branca" getCorCasa idPartida="PT-02" linha=5 coluna="f"
+expect "escura" getCorCasa idPartida="PT-02" linha=5 coluna="g"
+expect "branca" getCorCasa idPartida="PT-02" linha=5 coluna="h"
+
+expect "branca" getCorCasa idPartida="PT-02" linha=6 coluna="a"
+expect "escura" getCorCasa idPartida="PT-02" linha=6 coluna="b"
+expect "branca" getCorCasa idPartida="PT-02" linha=6 coluna="c"
+expect "escura" getCorCasa idPartida="PT-02" linha=6 coluna="d"
+expect "branca" getCorCasa idPartida="PT-02" linha=6 coluna="e"
+expect "escura" getCorCasa idPartida="PT-02" linha=6 coluna="f"
+expect "branca" getCorCasa idPartida="PT-02" linha=6 coluna="g"
+expect "escura" getCorCasa idPartida="PT-02" linha=6 coluna="h"
+
+expect "escura" getCorCasa idPartida="PT-02" linha=7 coluna="a"
+expect "branca" getCorCasa idPartida="PT-02" linha=7 coluna="b"
+expect "escura" getCorCasa idPartida="PT-02" linha=7 coluna="c"
+expect "branca" getCorCasa idPartida="PT-02" linha=7 coluna="d"
+expect "escura" getCorCasa idPartida="PT-02" linha=7 coluna="e"
+expect "branca" getCorCasa idPartida="PT-02" linha=7 coluna="f"
+expect "escura" getCorCasa idPartida="PT-02" linha=7 coluna="g"
+expect "branca" getCorCasa idPartida="PT-02" linha=7 coluna="h"
+
+expect "branca" getCorCasa idPartida="PT-02" linha=8 coluna="a"
+expect "escura" getCorCasa idPartida="PT-02" linha=8 coluna="b"
+expect "branca" getCorCasa idPartida="PT-02" linha=8 coluna="c"
+expect "escura" getCorCasa idPartida="PT-02" linha=8 coluna="d"
+expect "branca" getCorCasa idPartida="PT-02" linha=8 coluna="e"
+expect "escura" getCorCasa idPartida="PT-02" linha=8 coluna="f"
+expect "branca" getCorCasa idPartida="PT-02" linha=8 coluna="g"
+expect "escura" getCorCasa idPartida="PT-02" linha=8 coluna="h"
+
+#Verificar cores das pecas
+
+#Entradas invalidas
+
+expectError "A linha informada nao esta nos limites do tabuleiro" getCorPeca idPartida="PT-02" linha=123 coluna="a"
+expectError "A linha informada nao esta nos limites do tabuleiro" getCorPeca idPartida="PT-02" linha=0 coluna="c"
+expectError "A linha informada nao esta nos limites do tabuleiro" getCorPeca idPartida="PT-02" linha=-1 coluna="e"
+expectError "A linha informada nao e valida" getCorPeca idPartida="PT-02" linha=-88 coluna="a"
+expectError "A coluna informada nao e valida" getCorPeca idPartida="PT-02" linha=4 coluna="z"
+expectError "A coluna informada nao e valida" getCorPeca idPartida="PT-02" linha=1 coluna="z"
+expectError "A coluna informada nao e valida" getCorPeca idPartida="PT-02" linha=4 coluna=""
+expectError "A coluna informada nao e valida" getCorPeca idPartida="PT-02" linha=2 coluna=
+expectError "O ID da partida informado nao existe" getCorPeca idPartida="PT-55" linha=2 coluna="a"
+expectError "O ID da partida informado nao e valido" getCorPeca idPartida="" linha=2 coluna="a"
+expectError "O ID da partida informado nao e valido" getCorPeca idPartida= linha=2 coluna="a"
+
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=1 coluna="b"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=1 coluna="d"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=1 coluna="f"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=1 coluna="h"
+
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=2 coluna="a"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=2 coluna="c"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=2 coluna="e"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=2 coluna="g"
+
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=3 coluna="b"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=3 coluna="d"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=3 coluna="f"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=3 coluna="h"
+
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=4 coluna="a"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=4 coluna="c"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=4 coluna="e"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=4 coluna="g"
+
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=5 coluna="b"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=5 coluna="d"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=5 coluna="f"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=5 coluna="h"
+
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=6 coluna="a"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=6 coluna="c"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=6 coluna="e"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=6 coluna="g"
+
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=7 coluna="b"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=7 coluna="d"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=7 coluna="f"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=7 coluna="h"
+
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=8 coluna="a"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=8 coluna="c"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=8 coluna="e"
+expectError "Nao ha peca nas coordenadas informadas" getCorPeca idPartida="PT-02" linha=8 coluna="g"
+
+#Entradas validas
+
+expect "branca" getCorPeca idPartida="PT-02" linha=1 coluna="a"
+expect "branca" getCorPeca idPartida="PT-02" linha=1 coluna="c"
+expect "branca" getCorPeca idPartida="PT-02" linha=1 coluna="e"
+expect "branca" getCorPeca idPartida="PT-02" linha=1 coluna="g"
+
+expect "branca" getCorPeca idPartida="PT-02" linha=2 coluna="b"
+expect "branca" getCorPeca idPartida="PT-02" linha=2 coluna="d"
+expect "branca" getCorPeca idPartida="PT-02" linha=2 coluna="f"
+expect "branca" getCorPeca idPartida="PT-02" linha=2 coluna="h"
+
+expect "branca" getCorPeca idPartida="PT-02" linha=3 coluna="a"
+expect "branca" getCorPeca idPartida="PT-02" linha=3 coluna="c"
+expect "branca" getCorPeca idPartida="PT-02" linha=3 coluna="e"
+expect "branca" getCorPeca idPartida="PT-02" linha=3 coluna="g"
+
+expect "escura" getCorPeca idPartida="PT-02" linha=6 coluna="b"
+expect "escura" getCorPeca idPartida="PT-02" linha=6 coluna="d"
+expect "escura" getCorPeca idPartida="PT-02" linha=6 coluna="f"
+expect "escura" getCorPeca idPartida="PT-02" linha=6 coluna="h"
+
+expect "escura" getCorPeca idPartida="PT-02" linha=7 coluna="a"
+expect "escura" getCorPeca idPartida="PT-02" linha=7 coluna="c"
+expect "escura" getCorPeca idPartida="PT-02" linha=7 coluna="e"
+expect "escura" getCorPeca idPartida="PT-02" linha=7 coluna="g"
+
+expect "escura" getCorPeca idPartida="PT-02" linha=8 coluna="b"
+expect "escura" getCorPeca idPartida="PT-02" linha=8 coluna="d"
+expect "escura" getCorPeca idPartida="PT-02" linha=8 coluna="f"
+expect "escura" getCorPeca idPartida="PT-02" linha=8 coluna="h"
+
+zerarJogo
+
+quit

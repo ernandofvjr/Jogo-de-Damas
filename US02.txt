@@ -1,0 +1,64 @@
+#User Story 02 - Iniciar Partida
+
+#Iniciar partidas validas
+#Atributos: Nomes dos jogadores e numero do jogador que comeca a partida (fica com as pedras brancas)
+
+#regras de movimentacao:
+#regraMovimento1 = so anda para frente
+#regraMovimento2 = anda para frente e para tras
+
+#regras de sopro:
+#regraSopro1 = pode haver sopro (jogador perde a partida, nesse caso)
+#regraSopro2 = jogo nao permite sopro (emite erro)
+
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-01" tamanho=8
+
+iniciarPartida id="p01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+#este metodo encerra a partida sem salvar a instancia (equivalente a sair do jogo, exibir o dialogo de salvamento e o jogador selecionar nao)
+encerrarPartidaSemSalvar id="p01"
+
+iniciarPartida id="p02" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+encerrarPartidaSemSalvar id="p02"
+
+#Partidas invalidas:
+#Jogadores sem nome
+
+criarTabuleiro idTabuleiro="TB-22" dimensao=8
+
+expectError "Nome do jogador deve ser definido" iniciarPartida id="p03" idTabuleiro="TB-01" jogador1="" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+expectError "Nome do jogador deve ser definido" iniciarPartida id="p03" idTabuleiro="TB-01" jogador1="Carlos" jogador2="" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+#Comecar o jogo sem regra de movimentacao
+
+expectError "regra de movimentacao nao definida" iniciarPartida id="p03" idTabuleiro="TB-01" jogador1="Carlos" jogador2="Luis" jogadorPedraBranca=1 regraMovimento="" permiteSopro="false"
+
+#regraMovimento de movimentacao invalida
+expectError "regra de movimentacao invalida" iniciarPartida id="p03" idTabuleiro="TB-01" jogador1="Carlos" jogador2="Luis" jogadorPedraBranca=1 regraMovimento="regraMovimento4" permiteSopro="false"
+
+expectError "regra de movimentacao nao definida" iniciarPartida id="p03" idTabuleiro="TB-01" jogador1="Carlos" jogador2="Luis" jogadorPedraBranca=1 regraMovimento="" permiteSopro="false"
+
+#Posicionamento de pedras
+
+#ao criar tabuleiro, o mesmo ja deve estar com as pecas posicionadas
+criarTabuleiro idTabuleiro="TB-77" tamanho=8
+
+iniciarPartida id="PT-76" idTabuleiro="TB-01" jogador1="Carlos" jogador2="Luis" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+expect "true" isOcupada idPartida="PT-76" linha=1 coluna="a"
+
+expect "false" isOcupada idPartida="PT-76" linha=2 coluna="a"
+
+expect "true" isOcupada idPartida="PT-76" linha=8 coluna="h"
+
+expect "false" isOcupada idPartida="PT-76" linha=7 coluna="h"
+
+encerrarPartidaSemSalvar id="PT-76"
+
+zerarJogo
+
+quit

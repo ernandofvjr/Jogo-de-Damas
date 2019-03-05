@@ -1,0 +1,83 @@
+#User Story 07 - Finalizacao de partida
+
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-01" dimensao=8
+
+iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+ativarPosicionamentoManual idPartida="PT-01"
+
+posicionarPeca idPartida="PT-01" cor=2 linha=6 coluna="e"
+
+posicionarPeca idPartida="PT-01" cor=1 linha=5 coluna="d"
+
+setVez idPartida="PT-01" jogador=1
+
+#Jogador 1 vence
+movimentoJogador numeroJogador=1 linhaOrigem=5 colunaOrigem="d" linhaDestino=7 colunaDestino="f"
+
+expect "Pedro" getVencedorPartida id="PT-01"
+
+iniciarPartida id="PT-02" idTabuleiro="TB-01" jogador1="Christina" jogador2="Samara" jogadorPedraBranca=1 regraMovimento="regraMovimento1" 	permiteSopro="false"
+
+ativarPosicionamentoManual idPartida="PT-02"
+
+posicionarPeca idPartida="PT-02" cor=2 linha=3 coluna="d"
+
+posicionarPeca idPartida="PT-02" cor=1 linha=2 coluna="e"
+
+setVez idPartida="PT-02" jogador=2
+
+#Jogador 2 vence
+movimentoJogador numeroJogador=2 linhaOrigem=3 colunaOrigem="d" linhaDestino=1 colunaDestino="f"
+
+expect "Samara" getVencedorPartida id="PT-02"
+
+#Jogador come as duas unicas pecas do adversario
+
+criarTabuleiro idTabuleiro="TB-78" dimensao=8
+
+iniciarPartida id="PT-03" idTabuleiro="TB-78" jogador1="Alberto" jogador2="Thiago" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+ativarPosicionamentoManual idPartida="PT-03"
+
+posicionarPeca idPartida="PT-03" cor=2 linha=6 coluna="a"
+
+posicionarPeca idPartida="PT-03" cor=1 linha=5 coluna="b"
+
+posicionarPeca idPartida="PT-03" cor=1 linha=3 coluna="d"
+
+setVez idPartida="PT-03" jogador=2
+
+#Jogador 2 vence
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="a" linhaDestino=4 colunaDestino="c"
+
+movimentoJogador numeroJogador=2 linhaOrigem=4 colunaOrigem="c" linhaDestino=2 colunaDestino="e"
+
+expect "Thiago" getVencedorPartida id="PT-03"
+
+criarTabuleiro idTabuleiro="TB-32" dimensao=8
+
+iniciarPartida id="PT-04" idTabuleiro="TB-32" jogador1="Nathan" jogador2="Melissa" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+ativarPosicionamentoManual idPartida="PT-04"
+
+posicionarPeca idPartida="PT-04" cor=1 linha=3 coluna="h"
+
+posicionarPeca idPartida="PT-04" cor=2 linha=4 coluna="g"
+
+posicionarPeca idPartida="PT-04" cor=2 linha=6 coluna="e"
+
+setVez idPartida="PT-04" jogador=1
+
+#Jogador 1 vence
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="h" linhaDestino=5 colunaDestino="f"
+
+movimentoJogador numeroJogador=1 linhaOrigem=5 colunaOrigem="f" linhaDestino=7 colunaDestino="d"
+
+expect "Nathan" getVencedorPartida id="PT-04"
+
+zerarJogo
+
+quit

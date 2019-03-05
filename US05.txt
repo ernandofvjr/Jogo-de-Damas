@@ -1,0 +1,73 @@
+#User Story 05 - Salvar e continuar jogo
+
+zerarJogo
+
+criarTabuleiro idTabuleiro="TB-01" dimensao=8
+
+iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="c" linhaDestino=4 colunaDestino="d"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="f" linhaDestino=5 colunaDestino="g"
+
+finalizarESalvarJogo idPartida="PT-01"
+
+continuarPartida id="PT-01"
+
+expect "true" isOcupada idPartida="PT-01" linha=4 coluna="d"
+
+expect "true" isOcupada idPartida="PT-01" linha=5 coluna="g"
+
+expect "false" isOcupada idPartida="PT-01" linha=3 coluna="c"
+
+expect "false" isOcupada idPartida="PT-01" linha=6 coluna="f"
+
+movimentoJogador numeroJogador=1 linhaOrigem=3 colunaOrigem="g" linhaDestino=4 colunaDestino="h"
+
+movimentoJogador numeroJogador=2 linhaOrigem=6 colunaOrigem="b" linhaDestino=5 colunaDestino="a"
+
+movimentoJogador numeroJogador=1 linhaOrigem=2 colunaOrigem="b" linhaDestino=3 colunaDestino="c"
+
+finalizarESalvarJogo idPartida="PT-01"
+
+continuarPartida id="PT-01"
+
+expect "true" isOcupada idPartida="PT-01" linha=4 coluna="h"
+
+expect "true" isOcupada idPartida="PT-01" linha=5 coluna="a"
+
+expect "false" isOcupada idPartida="PT-01" linha=3 coluna="g"
+
+expect "false" isOcupada idPartida="PT-01" linha=2 coluna="b"
+
+finalizarESalvarJogo idPartida="PT-01"
+
+expectError "Ja existe uma partida salva com essa identificacao" iniciarPartida id="PT-01" idTabuleiro="TB-01" jogador1="Pedro" jogador2="Maria" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+iniciarPartida id="PT-02" idTabuleiro="TB-01" jogador1="Arthur" jogador2="Juliana" jogadorPedraBranca=1 regraMovimento="regraMovimento1" permiteSopro="false"
+
+movimentoJogador numeroJogador=1 linhaOrigem=1 colunaOrigem="a" linhaDestino=2 colunaDestino="b"
+
+movimentoJogador numeroJogador=2 linhaOrigem=7 colunaOrigem="c" linhaDestino=6 colunaDestino="b"
+
+finalizarESalvarJogo idPartida="PT-01"
+
+continuarPartida id="PT-02"
+
+expect "true" isOcupada idPartida="PT-02" linha=2 coluna="b"
+
+expect "true" isOcupada idPartida="PT-02" linha=6 coluna="b"
+
+expect "false" isOcupada idPartida="PT-02" linha=1 coluna="a"
+
+expect "false" isOcupada idPartida="PT-02" linha=7 coluna="c"
+
+finalizarESalvarJogo idPartida="PT-02"
+
+descartarPartida id="PT-02"
+
+expectError "Nao existe partida com essa identificacao" continuarPartida id="PT-02"
+
+zerarJogo
+
+quit
